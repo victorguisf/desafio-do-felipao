@@ -1,6 +1,19 @@
 // Mensagem Inicial
 console.log("Bem-vindo (a)")
-console.log("Digite seu nome de herói")
+
+// Usei o comando "return" abaixo após pesquisar, pois queria que houvesse algo que parasse de ler o código caso
+//a idade mínima não fosse antendida. Esse conteúdo ainda não foi visto, por isso surgiu a dúvida.
+
+let idade = "20"
+console.log("Digite sua idade:" + idade)
+switch (true){
+    case idade <= 11:
+    console.log("Você não possui idade o suficiente para prosseguir.")
+    return;
+    default:
+    console.log("Digite seu nome de herói")
+    
+}
 
 let nickname = "Pandora"
 
@@ -8,24 +21,29 @@ console.log(nickname + " sua jornada começa agora!")
 
 // Valor declarado do XP
 let xpAdquirido = 3500
+let rankDoHeroi = ""
 
 // Estrutura de decisão
 
 if(xpAdquirido <= 1000){
-    console.log("O Herói " + nickname + " está no nível Ferro.")
+    rankDoHeroi = "Ferro"
 }else if(xpAdquirido >= 1001 && xpAdquirido <= 2000){
-    console.log("O Herói " + nickname + " está no nível Bronze.")
+    rankDoHeroi = "Bronze"
 }else if(xpAdquirido >= 2001 && xpAdquirido <= 5000){
-    console.log("O Herói " + nickname + " está no nível Prata.")
+    rankDoHeroi = "Prata"
 }else if(xpAdquirido >= 5001 && xpAdquirido <=7000){
-    console.log("O Herói " + nickname + " está no nível Ouro.")
+    rankDoHeroi = "Ouro"
 }else if(xpAdquirido >= 7001 && xpAdquirido <= 8000){
-    console.log("O Herói " + nickname + " está no nível Platina.")
+    rankDoHeroi = "Platina"
 }else if(xpAdquirido >= 8001 && xpAdquirido <= 9000){
-    console.log("O Herói " + nickname + " está no nível Ascendente.")
+    rankDoHeroi = "Ascendente"
 }else if(xpAdquirido >= 9001 && xpAdquirido <= 10000){
-    console.log("O Herói " + nickname + " está no nível Imortal.")
+    rankDoHeroi = "Imortal"
 }else if(xpAdquirido >=10001){
-    console.log("O Herói " + nickname + " está no nível Radiante.")
+    rankDoHeroi = "Radiante"
 }
+console.log("O Herói " + nickname + " está no nível " + rankDoHeroi)
 
+// Bônus
+
+const numeros = [1,2,3,4,5,6]
