@@ -43,7 +43,3 @@ if(xpAdquirido <= 1000){
     rankDoHeroi = "Radiante"
 }
 console.log("O Herói " + nickname + " está no nível " + rankDoHeroi)
-
-// Bônus
-
-const numeros = [1,2,3,4,5,6]
